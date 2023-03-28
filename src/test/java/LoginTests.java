@@ -17,6 +17,7 @@ public class LoginTests {
         DashBoardPage dashBoardPage = new DashBoardPage();
         dashBoardPage.dashboardPageIsOpen();
     }
+
     @Test
     public void invalidLogin() {
         Configuration.fastSetValue = true; //чтобы быстрее отрабатывало
@@ -26,5 +27,31 @@ public class LoginTests {
         loginPage.enterPassword("vdvd");
         loginPage.clickOnLoginButton();
         loginPage.checkErrorMessage();
+    }
+
+    @Test
+    public void elementsAreVisible1() {
+        open("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        LoginPage loginPage = new LoginPage();
+        loginPage.checkImageLogo();
+
+    }
+
+    @Test
+    public void elementsAreVisible2() {
+        open("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        LoginPage loginPage = new LoginPage();
+        loginPage.logoIsDisplayed();
+        loginPage.logoImageIsCorrect();
+        loginPage.credSectionIsDisplayed();
+    }
+
+    @Test
+    public void forgotYourPasswordLink() {
+        open("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        LoginPage loginPage = new LoginPage();
+        loginPage.followTheForgotYourPasswordLink();
+        ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
+        resetPasswordPage.setTitleResetPassword();
     }
 }

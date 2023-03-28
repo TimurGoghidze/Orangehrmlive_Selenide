@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="info">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DashBoardPage.java" afterDir="false" />
+    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="change position DashBoardPage and LoginPage">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ResetPasswordPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DashBoardPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,46 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTests.invalidLogin">
+  <component name="RunManager" selected="JUnit.LoginTests.forgotYourPasswordLink">
+    <configuration name="LoginTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Orangehrmlive_Selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.elementsAreVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Orangehrmlive_Selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests" />
+      <option name="METHOD_NAME" value="elementsAreVisible" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.elementsAreVisible2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Orangehrmlive_Selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests" />
+      <option name="METHOD_NAME" value="elementsAreVisible2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.forgotYourPasswordLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Orangehrmlive_Selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests" />
+      <option name="METHOD_NAME" value="forgotYourPasswordLink" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTests.invalidLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Orangehrmlive_Selenide" />
       <option name="PACKAGE_NAME" value="" />
@@ -65,20 +103,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.successLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Orangehrmlive_Selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="successLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTests.forgotYourPasswordLink" />
+        <item itemvalue="JUnit.LoginTests.elementsAreVisible2" />
+        <item itemvalue="JUnit.LoginTests.elementsAreVisible" />
         <item itemvalue="JUnit.LoginTests.invalidLogin" />
-        <item itemvalue="JUnit.LoginTests.successLogin" />
+        <item itemvalue="JUnit.LoginTests" />
       </list>
     </recent_temporary>
   </component>
@@ -112,13 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679958406637</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change position DashBoardPage and LoginPage">
+      <created>1680015255132</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680015255132</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="@Test successLogin" />
     <MESSAGE value="add tests for login valid and invalid data + DashBoardPage and LoginPage" />
     <MESSAGE value="info" />
-    <option name="LAST_COMMIT_MESSAGE" value="info" />
+    <MESSAGE value="change position DashBoardPage and LoginPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="change position DashBoardPage and LoginPage" />
   </component>
 </project>
