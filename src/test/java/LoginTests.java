@@ -53,5 +53,6 @@ public class LoginTests {
         loginPage.followTheForgotYourPasswordLink();
         ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
         resetPasswordPage.setTitleResetPassword();
+        resetPasswordPage.urlIsCorrect();
     }
 }

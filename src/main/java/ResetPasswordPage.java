@@ -15,6 +15,17 @@ public class ResetPasswordPage {
         resetPasswordButton.shouldBe(visible);
     }
     public void urlIsCorrect(){
-        WebDriverRunner.getAndCheckWebDriver().getCurrentUrl();  //static class availai
+        //WebDriverRunner.getAndCheckWebDriver().getCurrentUrl();  //static class available
+        // Получаем текущий URL страницы
+        String currentUrl = WebDriverRunner.getAndCheckWebDriver().getCurrentUrl();
+//В этом коде используется метод можно getWebDriver() вместо getAndCheckWebDriver(), так как он
+// возвращает экземпляр WebDriver без проверки на null, что может быть полезным в некоторых ситуациях.
+// Проверяем, что текущий URL соответствует ожидаемому
+        if (currentUrl.equals("https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode")) {
+            System.out.println("Текущий URL соответствует ожидаемому");
+        } else {
+            System.out.println("Текущий URL не соответствует ожидаемому");
+        }
+
     }
 }
