@@ -1,11 +1,7 @@
-import com.codeborne.selenide.Condition;
+
 import com.codeborne.selenide.Configuration;
 import org.junit.Test;
 
-import java.time.Duration;
-
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class LoginTests {
