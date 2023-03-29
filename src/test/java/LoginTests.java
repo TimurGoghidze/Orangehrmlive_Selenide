@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class LoginTests {
+public class LoginTests extends BaseTest{
 
     @Test
     public void successLogin() {
@@ -53,6 +53,7 @@ public class LoginTests {
         loginPage.followTheForgotYourPasswordLink();
         ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
         resetPasswordPage.setTitleResetPassword();
-        resetPasswordPage.urlIsCorrect();
+        //resetPasswordPage.urlIsCorrect();
+        resetPasswordPage.URLisCorrectContainsDesiredPeace();
     }
 }

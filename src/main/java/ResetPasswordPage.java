@@ -5,6 +5,9 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byCssSelector;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.webdriver;
+import static com.codeborne.selenide.WebDriverConditions.url;
+import static org.junit.Assert.assertTrue;
 
 public class ResetPasswordPage {
    // private SelenideElement titleResetPassword = $(byAttribute("class","oxd-text oxd-text--h6 orangehrm-forgot-password-title"));
@@ -26,6 +29,16 @@ public class ResetPasswordPage {
         } else {
             System.out.println("Текущий URL не соответствует ожидаемому");
         }
+
+    }
+    public void currerntURLisCorrect(){ //вот еще метод
+        webdriver().shouldHave(url("https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode"));
+    }
+
+    public void URLisCorrectContainsDesiredPeace(){// еще метод
+        String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
+        assertTrue(currentUrl.contains("requestPasswordResetCode"));
+
 
     }
 }
