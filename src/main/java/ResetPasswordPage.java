@@ -10,14 +10,16 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 import static org.junit.Assert.assertTrue;
 
 public class ResetPasswordPage {
-   // private SelenideElement titleResetPassword = $(byAttribute("class","oxd-text oxd-text--h6 orangehrm-forgot-password-title"));
+    // private SelenideElement titleResetPassword = $(byAttribute("class","oxd-text oxd-text--h6 orangehrm-forgot-password-title"));
     private SelenideElement titleResetPassword = $(By.className("orangehrm-forgot-password-title"));
-    private SelenideElement resetPasswordButton =$(byCssSelector("[type='submit']"));
+    private SelenideElement resetPasswordButton = $(byCssSelector("[type='submit']"));
+
     public void setTitleResetPassword() {
         titleResetPassword.shouldBe(visible);
         resetPasswordButton.shouldBe(visible);
     }
-    public void urlIsCorrect(){
+
+    public void urlIsCorrect() {
         //WebDriverRunner.getAndCheckWebDriver().getCurrentUrl();  //static class available
         // Получаем текущий URL страницы
         String currentUrl = WebDriverRunner.getAndCheckWebDriver().getCurrentUrl();
@@ -31,11 +33,12 @@ public class ResetPasswordPage {
         }
 
     }
-    public void currerntURLisCorrect(){ //вот еще метод
+
+    public void currerntURLisCorrect() { //вот еще метод
         webdriver().shouldHave(url("https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode"));
     }
 
-    public void URLisCorrectContainsDesiredPeace(){// еще метод
+    public void URLisCorrectContainsDesiredPeace() {// еще метод
         String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
         assertTrue(currentUrl.contains("requestPasswordResetCode"));
 

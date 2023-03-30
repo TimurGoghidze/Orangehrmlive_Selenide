@@ -1,4 +1,6 @@
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.After;
 import org.junit.Before;
 
@@ -9,11 +11,9 @@ public class BaseTest {
 
     public final String BASE_URL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 
-    LoginPage loginPage = new LoginPage();
-    ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
-    DashBoardPage dashBoardPage = new DashBoardPage();
     @Before
-    public void setUp(){
+    public void setUp() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());// для отчёта селенида
         open(BASE_URL);
         Configuration.fastSetValue = true; // для скорости
     }
@@ -22,4 +22,9 @@ public class BaseTest {
     public void tearDown() {
         closeWebDriver();
     }
+
+    LoginPage loginPage = new LoginPage();
+    DashBoardPage dashBoardPage = new DashBoardPage();
+    ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
+    SideBar sideBar = new SideBar();
 }

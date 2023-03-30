@@ -1,7 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
-
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.*;
@@ -60,5 +59,11 @@ public class LoginPage {
 
     public void followTheForgotYourPasswordLink() {
         forgotYourPasswordButton.click();
+    }
+
+    public void successLogin(String userNameValue, String passwordValue){
+        enterUsername(userNameValue);
+        enterPassword(passwordValue);
+        clickOnLoginButton();
     }
 }

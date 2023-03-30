@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add BaseTest + @After">
+    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add new pom.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SideBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SideBarTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ResetPasswordPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTests.java" afterDir="false" />
     </list>
@@ -14,6 +18,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,53 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.LoginTests.successLogin">
-    <configuration name="LoginTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Orangehrmlive_Selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTests.elementsAreVisible1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Orangehrmlive_Selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LoginTests" />
       <option name="METHOD_NAME" value="elementsAreVisible1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.forgotYourPasswordLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Orangehrmlive_Selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="forgotYourPasswordLink" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.invalidLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Orangehrmlive_Selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="invalidLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,13 +81,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SideBarTests.allItemsAreDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
+      <option name="METHOD_NAME" value="allItemsAreDisplayed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SideBarTests.closeSideBar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
+      <option name="METHOD_NAME" value="closeSideBar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SideBarTests.openSideBar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
+      <option name="METHOD_NAME" value="openSideBar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LoginTests.successLogin" />
+        <item itemvalue="JUnit.SideBarTests.closeSideBar" />
+        <item itemvalue="JUnit.SideBarTests.openSideBar" />
+        <item itemvalue="JUnit.SideBarTests.allItemsAreDisplayed" />
         <item itemvalue="JUnit.LoginTests.elementsAreVisible1" />
-        <item itemvalue="JUnit.LoginTests" />
-        <item itemvalue="JUnit.LoginTests.invalidLogin" />
-        <item itemvalue="JUnit.LoginTests.forgotYourPasswordLink" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680081082715</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add new pom.xml">
+      <created>1680084675442</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680084675442</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -182,6 +197,7 @@
     <MESSAGE value="change position ResetPasswordPage and tests" />
     <MESSAGE value="add URL check" />
     <MESSAGE value="add BaseTest + @After" />
-    <option name="LAST_COMMIT_MESSAGE" value="add BaseTest + @After" />
+    <MESSAGE value="add new pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new pom.xml" />
   </component>
 </project>
