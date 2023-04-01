@@ -3,7 +3,8 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.CollectionCondition.size;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
@@ -17,6 +18,9 @@ public class SideBar {
     private SelenideElement switchSidebar = $(byAttribute("type", "button"));
     private SelenideElement sideBar = $(byClassName("oxd-sidepanel"));
     private SelenideElement recruitmentButton = $(byAttribute("href", "/web/index.php/recruitment/viewRecruitmentModule"));
+
+    private ElementsCollection sideBarButtons = $$(byClassName("oxd-main-menu-item-wrapper"));
+    private SelenideElement timeButton = $(byAttribute("href","/web/index.php/time/viewTimeModule"));
 
     public void checkElementsAreVisible() {
         for (SelenideElement element :
@@ -52,5 +56,32 @@ public class SideBar {
 
     public void clickOnRecruitmentButton() {
         recruitmentButton.click();
+    }
+
+    public void enterValueToSearch(String expectedText) {
+                searchInput.setValue(expectedText);
+
+    }
+    public void buttonHasExpectedText(String expectedText){
+        sideBarButtons.get(0).shouldHave(text(expectedText));
+        //timeButton.shouldHave(text(expectedText));
+    }
+    public void searchInputClick(){
+        searchInput.click();
+    }
+
+
+
+    public void quantityButtonIsDisplayed(){
+        sideBarButtons.filterBy(visible).shouldHave(size(1));
+    }
+
+    public void quantityButtonIsNotDisplayed(){
+        sideBarButtons.filterBy(visible).shouldHave(size(0));
+    }
+
+    public void searchPartTextCheck(){
+        //sideBar.shouldHave(Condition.attributeMatching("class", ".*re.*"));
+        sideBar.shouldHave(partialText("re"));
     }
 }

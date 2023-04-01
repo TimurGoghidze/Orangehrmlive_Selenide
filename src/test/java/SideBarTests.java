@@ -20,10 +20,46 @@ public class SideBarTests extends BaseTest {
     }
 
     @Test
-    public void checkRecruitmentPage(){
+    public void checkRecruitmentPage() {
         loginPage.successLogin("Admin", "admin123");
         sideBar.clickOnRecruitmentButton();
         recruitmentPage.recruitmentTitleIsDisplayed();
-       recruitmentPage.URLisCorrectContainsViewCandidates();
+        recruitmentPage.URLisCorrectContainsViewCandidates();
+    }
+
+    @Test
+    public void checkSearchItem() {//ввод Time и проверка что она появилась
+        loginPage.successLogin("Admin", "admin123");
+        sideBar.searchInputIsDisplayed();
+        sideBar.enterValueToSearch("Time");
+        sideBar.buttonHasExpectedText("Time");
+    }
+
+    @Test
+    public void searchInputOneValue() {//ввод Time и проверка что она появилась
+        String searchValue = "Time"; //введем
+        loginPage.successLogin("Admin", "admin123");
+        sideBar.searchInputIsDisplayed();
+        sideBar.enterValueToSearch(searchValue);
+        sideBar.quantityButtonIsDisplayed();
+        sideBar.buttonHasExpectedText(searchValue);
+    }
+
+    @Test
+    public void searchInvalidButton() {
+        loginPage.successLogin("Admin", "admin123");
+        sideBar.searchInputIsDisplayed();
+        String searchValue = "eee"; //введем
+        sideBar.enterValueToSearch(searchValue);
+        sideBar.quantityButtonIsNotDisplayed();
+    }
+
+    @Test
+    public void searchPartText() {
+        loginPage.successLogin("Admin", "admin123");
+        sideBar.searchInputIsDisplayed();
+        String searchValue = "re"; //
+        sideBar.enterValueToSearch(searchValue);
+        sideBar.searchPartTextCheck();
     }
 }

@@ -15,8 +15,8 @@ public class RecruitmentPage {
        //titleRecruitment.shouldHave(text("Recruitment"));
     }
     public void URLisCorrectContainsViewCandidates() {
-        String recruitmentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
-        assertTrue(recruitmentUrl.contains("viewCandidates"));
+        String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
+        assertTrue(currentUrl.contains("viewCandidates"));
     }
 
 

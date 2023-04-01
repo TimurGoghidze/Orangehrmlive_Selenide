@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add sideBar">
-      <change afterPath="$PROJECT_DIR$/src/main/java/RecruitmentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RunnerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Smoke.java" afterDir="false" />
+    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RecruitmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecruitmentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SideBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SideBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SideBarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SideBarTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,32 +58,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SideBarTests.checkRecruitmentPage">
+  <component name="RunManager" selected="JUnit.SideBarTests.searchInvalidButton">
     <configuration name="LoginTests.forgotYourPasswordLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orangehrmlive-selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LoginTests" />
       <option name="METHOD_NAME" value="forgotYourPasswordLink" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.successLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="orangehrmlive-selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="successLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="orangehrmlive-selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RunnerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,11 +79,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SideBarTests.closeSideBar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SideBarTests.checkSearchItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orangehrmlive-selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SideBarTests" />
-      <option name="METHOD_NAME" value="closeSideBar" />
+      <option name="METHOD_NAME" value="checkSearchItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SideBarTests.searchInputOneValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
+      <option name="METHOD_NAME" value="searchInputOneValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SideBarTests.searchInvalidButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
+      <option name="METHOD_NAME" value="searchInvalidButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SideBarTests.searchInvalidButton" />
+        <item itemvalue="JUnit.SideBarTests.searchInputOneValue" />
+        <item itemvalue="JUnit.SideBarTests.checkSearchItem" />
         <item itemvalue="JUnit.SideBarTests.checkRecruitmentPage" />
         <item itemvalue="JUnit.LoginTests.forgotYourPasswordLink" />
-        <item itemvalue="JUnit.RunnerTest" />
-        <item itemvalue="JUnit.LoginTests.successLogin" />
-        <item itemvalue="JUnit.SideBarTests.closeSideBar" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680208416633</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add RecruitmentPage + test and Smoke">
+      <created>1680356588400</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680356588400</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add changes">
+      <created>1680356767917</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680356767917</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,6 +218,8 @@
     <MESSAGE value="add BaseTest + @After" />
     <MESSAGE value="add new pom.xml" />
     <MESSAGE value="add sideBar" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sideBar" />
+    <MESSAGE value="add RecruitmentPage + test and Smoke" />
+    <MESSAGE value="add changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add changes" />
   </component>
 </project>

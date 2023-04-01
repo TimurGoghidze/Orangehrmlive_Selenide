@@ -32,4 +32,5 @@ public class BaseTest {
     ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
     SideBar sideBar = new SideBar();
     RecruitmentPage recruitmentPage = new RecruitmentPage();
+
 }
