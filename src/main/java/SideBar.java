@@ -50,7 +50,7 @@ public class SideBar {
         sideBar.shouldHave(Condition.attributeMatching("class", ".*toggled.*"));
     }
 
-    public void clickOnRecruimentButton() {
+    public void clickOnRecruitmentButton() {
         recruitmentButton.click();
     }
 }

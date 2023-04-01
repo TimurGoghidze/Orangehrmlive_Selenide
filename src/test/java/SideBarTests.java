@@ -22,8 +22,7 @@ public class SideBarTests extends BaseTest {
     @Test
     public void checkRecruitmentPage(){
         loginPage.successLogin("Admin", "admin123");
-
-        sideBar.clickOnRecruimentButton();
+        sideBar.clickOnRecruitmentButton();
         recruitmentPage.recruitmentTitleIsDisplayed();
        recruitmentPage.URLisCorrectContainsViewCandidates();
     }
