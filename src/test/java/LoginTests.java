@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Configuration;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 
 public class LoginTests extends BaseTest {
@@ -35,6 +36,7 @@ public class LoginTests extends BaseTest {
     }
 
     @Test
+    @Category(Smoke.class)
     public void forgotYourPasswordLink() {
         loginPage.followTheForgotYourPasswordLink();
         resetPasswordPage.setTitleResetPassword();

@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 public class SideBarTests extends BaseTest {
 
@@ -11,9 +12,19 @@ public class SideBarTests extends BaseTest {
     }
 
     @Test
+    @Category(Smoke.class)
     public void closeSideBar() {
         loginPage.successLogin("Admin", "admin123");
         sideBar.clickOnSidebar();
         sideBar.checkSideBarRolled();
+    }
+
+    @Test
+    public void checkRecruitmentPage(){
+        loginPage.successLogin("Admin", "admin123");
+
+        sideBar.clickOnRecruimentButton();
+        recruitmentPage.recruitmentTitleIsDisplayed();
+       recruitmentPage.URLisCorrectContainsViewCandidates();
     }
 }

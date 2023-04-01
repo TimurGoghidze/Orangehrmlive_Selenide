@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add new pom.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SideBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SideBarTests.java" afterDir="false" />
+    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add sideBar">
+      <change afterPath="$PROJECT_DIR$/src/main/java/RecruitmentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RunnerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Smoke.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ResetPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SideBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SideBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SideBarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SideBarTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,12 +62,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTests.successLogin">
-    <configuration name="LoginTests.elementsAreVisible1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Orangehrmlive_Selenide" />
+  <component name="RunManager" selected="JUnit.SideBarTests.checkRecruitmentPage">
+    <configuration name="LoginTests.forgotYourPasswordLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="elementsAreVisible1" />
+      <option name="METHOD_NAME" value="forgotYourPasswordLink" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,11 +83,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SideBarTests.allItemsAreDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RunnerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SideBarTests.checkRecruitmentPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orangehrmlive-selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SideBarTests" />
-      <option name="METHOD_NAME" value="allItemsAreDisplayed" />
+      <option name="METHOD_NAME" value="checkRecruitmentPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,23 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SideBarTests.openSideBar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="orangehrmlive-selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
-      <option name="METHOD_NAME" value="openSideBar" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SideBarTests.checkRecruitmentPage" />
+        <item itemvalue="JUnit.LoginTests.forgotYourPasswordLink" />
+        <item itemvalue="JUnit.RunnerTest" />
         <item itemvalue="JUnit.LoginTests.successLogin" />
         <item itemvalue="JUnit.SideBarTests.closeSideBar" />
-        <item itemvalue="JUnit.SideBarTests.openSideBar" />
-        <item itemvalue="JUnit.SideBarTests.allItemsAreDisplayed" />
-        <item itemvalue="JUnit.LoginTests.elementsAreVisible1" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680084675442</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add sideBar">
+      <created>1680208416633</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680208416633</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,6 +206,7 @@
     <MESSAGE value="add URL check" />
     <MESSAGE value="add BaseTest + @After" />
     <MESSAGE value="add new pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new pom.xml" />
+    <MESSAGE value="add sideBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sideBar" />
   </component>
 </project>

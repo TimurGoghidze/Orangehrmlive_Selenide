@@ -13,9 +13,13 @@ public class BaseTest {
 
     @Before
     public void setUp() {
+
+       // Configuration.headless = true;//но браузер не будет открываться
+        Configuration.browser = "chrome"; // если хотим сменить браузер а по умолчанию тот что установлен можно вообще без этой строки
+        Configuration.fastSetValue = true; // для скорости
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());// для отчёта селенида
         open(BASE_URL);
-        Configuration.fastSetValue = true; // для скорости
+
     }
 
     @After
@@ -27,4 +31,5 @@ public class BaseTest {
     DashBoardPage dashBoardPage = new DashBoardPage();
     ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
     SideBar sideBar = new SideBar();
+    RecruitmentPage recruitmentPage = new RecruitmentPage();
 }
