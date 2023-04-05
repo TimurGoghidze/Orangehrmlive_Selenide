@@ -21,6 +21,7 @@ public class SideBar {
 
     private ElementsCollection sideBarButtons = $$(byClassName("oxd-main-menu-item-wrapper"));
     private SelenideElement timeButton = $(byAttribute("href","/web/index.php/time/viewTimeModule"));
+    private SelenideElement AdminButton = $(byCssSelector("[class='oxd-text oxd-text--span oxd-main-menu-item--name']"));
 
     public void checkElementsAreVisible() {
         for (SelenideElement element :
@@ -81,7 +82,20 @@ public class SideBar {
     }
 
     public void searchPartTextCheck(){
-        //sideBar.shouldHave(Condition.attributeMatching("class", ".*re.*"));
+       // sideBar.shouldHave(Condition.attributeMatching("class", ".*re.*"));
         sideBar.shouldHave(partialText("re"));
+    }
+    public void quantityOfVisibleButtons(Integer expectedQuantity){
+        sideBarButtons.shouldHave(size(expectedQuantity));
+    }
+    public void eachCollectionElementHasPartTest(String expectedText){
+        for (SelenideElement button:
+        sideBarButtons){
+            button.shouldHave((partialText(expectedText)));
+        }
+    }
+    public void clickOnAdminButton(){
+        AdminButton.shouldBe(visible);
+        AdminButton.click();
     }
 }

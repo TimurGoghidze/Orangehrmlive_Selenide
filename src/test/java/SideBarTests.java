@@ -56,10 +56,21 @@ public class SideBarTests extends BaseTest {
 
     @Test
     public void searchPartText() {
+        String searchValue = "re"; //
         loginPage.successLogin("Admin", "admin123");
         sideBar.searchInputIsDisplayed();
-        String searchValue = "re"; //
         sideBar.enterValueToSearch(searchValue);
         sideBar.searchPartTextCheck();
+    }
+    @Test
+    public void searchPartText2(){
+        String searchValue = "re"; //
+        loginPage.successLogin("Admin", "admin123");
+        sideBar.searchInputIsDisplayed();
+        sideBar.enterValueToSearch(searchValue);
+        sideBar.quantityOfVisibleButtons(2);
+        sideBar.eachCollectionElementHasPartTest(searchValue);
+
+
     }
 }

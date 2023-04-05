@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add changes">
+    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AdminPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AdminTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RecruitmentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecruitmentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SideBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SideBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SideBarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SideBarTests.java" afterDir="false" />
@@ -58,12 +59,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SideBarTests.searchInvalidButton">
-    <configuration name="LoginTests.forgotYourPasswordLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdminTests.allRequiredFieldsAreEmpty">
+    <configuration name="AdminTests.allRequiredFieldsAreEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orangehrmlive-selenide" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTests" />
-      <option name="METHOD_NAME" value="forgotYourPasswordLink" />
+      <option name="MAIN_CLASS_NAME" value="AdminTests" />
+      <option name="METHOD_NAME" value="allRequiredFieldsAreEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,16 +75,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SideBarTests" />
       <option name="METHOD_NAME" value="checkRecruitmentPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SideBarTests.checkSearchItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="orangehrmlive-selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
-      <option name="METHOD_NAME" value="checkSearchItem" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,13 +100,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SideBarTests.searchPartText2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
+      <option name="METHOD_NAME" value="searchPartText2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminTests.allRequiredFieldsAreEmpty" />
+        <item itemvalue="JUnit.SideBarTests.checkRecruitmentPage" />
+        <item itemvalue="JUnit.SideBarTests.searchPartText2" />
         <item itemvalue="JUnit.SideBarTests.searchInvalidButton" />
         <item itemvalue="JUnit.SideBarTests.searchInputOneValue" />
-        <item itemvalue="JUnit.SideBarTests.checkSearchItem" />
-        <item itemvalue="JUnit.SideBarTests.checkRecruitmentPage" />
-        <item itemvalue="JUnit.LoginTests.forgotYourPasswordLink" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680356767917</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add tests">
+      <created>1680375789790</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680375789790</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,6 +228,7 @@
     <MESSAGE value="add sideBar" />
     <MESSAGE value="add RecruitmentPage + test and Smoke" />
     <MESSAGE value="add changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add changes" />
+    <MESSAGE value="add tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests" />
   </component>
 </project>

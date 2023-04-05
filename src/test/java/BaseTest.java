@@ -16,8 +16,9 @@ public class BaseTest {
 
        // Configuration.headless = true;//но браузер не будет открываться
         Configuration.browser = "chrome"; // если хотим сменить браузер а по умолчанию тот что установлен можно вообще без этой строки
-        Configuration.fastSetValue = true; // для скорости
+        Configuration.fastSetValue = true; // для скорости запуск будет через javascript
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());// для отчёта селенида
+        //System.setProperty("chromeoptions.args", "--remote-allow-origins=*"); // на случай если хромдрайвер не идет
         open(BASE_URL);
 
     }
@@ -32,5 +33,6 @@ public class BaseTest {
     ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
     SideBar sideBar = new SideBar();
     RecruitmentPage recruitmentPage = new RecruitmentPage();
+    AdminPage adminPage = new AdminPage();
 
 }
