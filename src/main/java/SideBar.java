@@ -23,6 +23,7 @@ public class SideBar {
     private SelenideElement timeButton = $(byAttribute("href","/web/index.php/time/viewTimeModule"));
     private SelenideElement AdminButton = $(byCssSelector("[class='oxd-text oxd-text--span oxd-main-menu-item--name']"));
 
+    private SelenideElement directoryButton = $(byAttribute("href","/web/index.php/directory/viewDirectory"));
     public void checkElementsAreVisible() {
         for (SelenideElement element :
                 collection) {
@@ -36,6 +37,7 @@ public class SideBar {
     }
 
     public void clickOnSidebar() {
+        switchSidebar.shouldBe(visible);
         switchSidebar.click();
 
 
@@ -97,5 +99,10 @@ public class SideBar {
     public void clickOnAdminButton(){
         AdminButton.shouldBe(visible);
         AdminButton.click();
+    }
+
+    public void clickOnDirectoryButton(){
+        directoryButton.shouldBe(visible);
+        directoryButton.click();
     }
 }

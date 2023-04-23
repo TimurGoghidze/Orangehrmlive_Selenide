@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdminPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AdminTests.java" afterDir="false" />
+    <list default="true" id="07dd2861-bdd4-4b39-9135-89f10c7feb7e" name="Changes" comment="add DirectoryTests and DirectoryPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SideBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SideBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SideBarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SideBarTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DirectoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DirectoryTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,9 +39,16 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2Nc4tCSEOdu2UMag0nFIcsOjmbx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,7 +57,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -59,7 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdminTests.allRequiredFieldsAreEmpty">
+  <component name="RunManager" selected="JUnit.RunnerTest">
     <configuration name="AdminTests.allRequiredFieldsAreEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orangehrmlive-selenide" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,31 +77,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DirectoryTests.checkCardInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DirectoryTests" />
+      <option name="METHOD_NAME" value="checkCardInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="orangehrmlive-selenide" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RunnerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SideBarTests.checkRecruitmentPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="orangehrmlive-selenide" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SideBarTests" />
       <option name="METHOD_NAME" value="checkRecruitmentPage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SideBarTests.searchInputOneValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="orangehrmlive-selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
-      <option name="METHOD_NAME" value="searchInputOneValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SideBarTests.searchInvalidButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="orangehrmlive-selenide" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SideBarTests" />
-      <option name="METHOD_NAME" value="searchInvalidButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RunnerTest" />
+        <item itemvalue="JUnit.DirectoryTests.checkCardInfo" />
         <item itemvalue="JUnit.AdminTests.allRequiredFieldsAreEmpty" />
         <item itemvalue="JUnit.SideBarTests.checkRecruitmentPage" />
         <item itemvalue="JUnit.SideBarTests.searchPartText2" />
-        <item itemvalue="JUnit.SideBarTests.searchInvalidButton" />
-        <item itemvalue="JUnit.SideBarTests.searchInputOneValue" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680375789790</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add AdminPage + tests">
+      <created>1680729194664</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680729194664</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,6 +242,8 @@
     <MESSAGE value="add RecruitmentPage + test and Smoke" />
     <MESSAGE value="add changes" />
     <MESSAGE value="add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests" />
+    <MESSAGE value="add AdminPage + tests" />
+    <MESSAGE value="add DirectoryTests and DirectoryPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DirectoryTests and DirectoryPage" />
   </component>
 </project>

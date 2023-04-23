@@ -34,5 +34,6 @@ public class BaseTest {
     SideBar sideBar = new SideBar();
     RecruitmentPage recruitmentPage = new RecruitmentPage();
     AdminPage adminPage = new AdminPage();
+    DirectoryPage directoryPage = new DirectoryPage();
 
 }
